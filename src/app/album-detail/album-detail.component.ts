@@ -11,7 +11,8 @@ import { AlbumService } from '../album.service';
   providers: [AlbumService]
 })
 export class AlbumDetailComponent implements OnInit {
-  albumId: number = null;
+  albumId: number;
+  albumToDisplay: Album;
 
   constructor(
     private route: ActivatedRoute,
@@ -21,8 +22,9 @@ export class AlbumDetailComponent implements OnInit {
 
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {
-      this.albumId = parseInt(urlParameters['id']);
-    });
+     this.albumId = parseInt(urlParameters['id']);
+   });
+   this.albumToDisplay = this.albumService.getAlbumById(this.albumId);
   }
 
 }
