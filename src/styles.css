@@ -10,7 +10,6 @@ h1 {
   padding: 15px;
 }
 nav {
-  bottom: 0;
   font-family: monospace;
   margin: 5px 0;
   background: #1d162b;
@@ -20,4 +19,6 @@ nav {
 nav li {
   display: inline-flex;
   font-size: 14pt;
+  padding-left: 5pt;
+  padding-right: 5pt;
 }
