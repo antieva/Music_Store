@@ -10,6 +10,7 @@ h1 {
   padding: 15px;
 }
 nav {
+  bottom: 0;
   font-family: monospace;
   margin: 5px 0;
   background: #1d162b;
